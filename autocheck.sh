@@ -21,7 +21,7 @@ https://raw.githubusercontent.com/rentianyu/Ad-set-hosts/master/xiaobeita/hosts
 https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts
 https://raw.githubusercontent.com/ilpl/ad-hosts/master/hosts
 https://gitee.com/lhzgl6587/hosts/raw/master/hosts
-#https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/iPv4Hosts.txt
+https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/iPv4Hosts.txt
 EOF
 
 # 保留必要host
