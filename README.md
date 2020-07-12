@@ -20,3 +20,4 @@ Update period: Hourly.
 | rentianyu | [link](https://github.com/rentianyu/Ad-set-hosts) |
 | StevenBlack | [link](https://github.com/StevenBlack/hosts) |
 | ilpl | [link](https://github.com/ilpl/ad-hosts) |
+| iOSAdblockList | [link](https://github.com/BlackJack8/iOSAdblockList) |
