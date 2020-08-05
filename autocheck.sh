@@ -21,6 +21,11 @@ https://raw.githubusercontent.com/rentianyu/Ad-set-hosts/master/xiaobeita/hosts
 https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts
 https://raw.githubusercontent.com/ilpl/ad-hosts/master/hosts
 https://gitee.com/lhzgl6587/hosts/raw/master/hosts
+https://raw.githubusercontent.com/Amazefcc233/no-ads-hosts/master/hosts
+https://raw.githubusercontent.com/easonjim/blackhosts/master/hosts
+https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/hosts/hosts0
+https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/hosts/hosts1
+https://raw.githubusercontent.com/notracking/hosts-blocklists/master/hostnames.txt
 https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/iPv4Hosts.txt
 EOF
 
