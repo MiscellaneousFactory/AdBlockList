@@ -23,6 +23,7 @@ https://raw.githubusercontent.com/ilpl/ad-hosts/master/hosts
 https://gitee.com/lhzgl6587/hosts/raw/master/hosts
 https://raw.githubusercontent.com/Amazefcc233/no-ads-hosts/master/hosts
 https://raw.githubusercontent.com/easonjim/blackhosts/master/hosts
+https://raw.githubusercontent.com/Licolnlee/AdBlockList/master/AdBlockLiteTest-dnsmasq
 https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/iPv4Hosts.txt
 EOF
 
