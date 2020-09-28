@@ -1,4 +1,4 @@
-# 2020-09-27 17:09:43
+# 2020-09-28 17:09:54
 # 杂项工厂实验项目，请勿商用
 
 127.0.0.1 localhost
@@ -5388,6 +5388,7 @@
 127.0.0.1 ad-board.com
 127.0.0.1 ad-brix.com
 127.0.0.1 ad-cache.dopool.com
+127.0.0.1 ad-cdn.qingting.fm
 127.0.0.1 ad-cdn.technoratimedia.com
 127.0.0.1 ad-center.com
 127.0.0.1 ad-channel.wikawika.xyz
@@ -18127,6 +18128,7 @@
 127.0.0.1 ap.adriver.ru
 127.0.0.1 ap.ads.link4ads.com
 127.0.0.1 ap.adups.com
+127.0.0.1 ap.cpatrk.net
 127.0.0.1 ap.dongqiudi.com
 127.0.0.1 ap.event.cmp.advertising.com
 127.0.0.1 ap.immomo.com
@@ -18204,6 +18206,7 @@
 127.0.0.1 api-ads.tiantianqutao.com
 127.0.0.1 api-ads.tiantianqutao.com
 127.0.0.1 api-analytics-bootstrap.metaps.com
+127.0.0.1 api-analytics-cn.huami.com
 127.0.0.1 api-analytics.metaps.com
 127.0.0.1 api-app.ants.vn
 127.0.0.1 api-bts.logsss.com
@@ -18375,6 +18378,7 @@
 127.0.0.1 api.appfireworks.com
 127.0.0.1 api.appjiagu.com
 127.0.0.1 api.applifier.com
+127.0.0.1 api.applink.mob.com
 127.0.0.1 api.applovin.com
 127.0.0.1 api.appmedia.cn
 127.0.0.1 api.appnext.com
@@ -45791,7 +45795,6 @@
 127.0.0.1 fee-hydrocodone.bebto.com
 127.0.0.1 feebleshock.com
 127.0.0.1 feed-back.com.tr
-127.0.0.1 feed-image.baidu.com
 127.0.0.1 feed-rt.baronsoffers.com
 127.0.0.1 feed.4wnet.com
 127.0.0.1 feed.adnow.com
@@ -49288,6 +49291,7 @@
 127.0.0.1 gebadu.com
 127.0.0.1 gebralefukim.site
 127.0.0.1 gecko-hl.snssdk.com
+127.0.0.1 gecko-lq.snssdk.com
 127.0.0.1 gedcompani.fun
 127.0.0.1 gedich.com
 127.0.0.1 gedmhqqipuz6wfon.pro
@@ -64150,6 +64154,7 @@
 127.0.0.1 log-3.previewnetworks.com
 127.0.0.1 log-3.samsungacr.com
 127.0.0.1 log-ads.r7.com
+127.0.0.1 log-api.pangolin-sdk-toutiao.com
 127.0.0.1 log-collector.svctr.zynga.com
 127.0.0.1 log-config.samsungacr.com
 127.0.0.1 log-dbff2e04.us.v2.we-stats.com
@@ -64634,7 +64639,6 @@
 127.0.0.1 logs.51cto.com
 127.0.0.1 logs.81plug.com
 127.0.0.1 logs.aiya.com.cn
-127.0.0.1 logs.amap.com
 127.0.0.1 logs.cafewell.com
 127.0.0.1 logs.chelaile.net.cn
 127.0.0.1 logs.cnfol.com
@@ -68861,6 +68865,7 @@
 127.0.0.1 me.5.p2l.info
 127.0.0.1 me.afp.chinanews.com
 127.0.0.1 me.com.x9wj2.cn
+127.0.0.1 me.cpatrk.net
 127.0.0.1 me.effectivemeasure.net
 127.0.0.1 me.fqtra.com
 127.0.0.1 me.linkedin.com
@@ -70687,7 +70692,6 @@
 127.0.0.1 minnesotastatewire.com
 127.0.0.1 minologyhesia.site
 127.0.0.1 minormeeting.com
-127.0.0.1 minorshort.weixin.qq.com
 127.0.0.1 minr.pw
 127.0.0.1 minsistereron.site
 127.0.0.1 mint.boingboing.net
@@ -91383,6 +91387,7 @@
 127.0.0.1 sdk.synerise.com
 127.0.0.1 sdk.talkingdata.com
 127.0.0.1 sdk.testflightapp.com
+127.0.0.1 sdk.tf.360.cn
 127.0.0.1 sdk.tigertext.me
 127.0.0.1 sdk.touchcast.com
 127.0.0.1 sdk.tresensa.com
@@ -91451,6 +91456,7 @@
 127.0.0.1 sdkm.w.vip.ams1.inmobi.com
 127.0.0.1 sdkmetrics.mercadopago.com.br
 127.0.0.1 sdkpay.uu.cc
+127.0.0.1 sdkrec.tf.360.cn
 127.0.0.1 sdks.stats-locations.com
 127.0.0.1 sdksitter.m.sjzhushou.com
 127.0.0.1 sdkstat.ggsafe.com
@@ -106430,6 +106436,7 @@
 127.0.0.1 umbbs.cn
 127.0.0.1 umbel.com
 127.0.0.1 umbs.ero-advertising.com
+127.0.0.1 umdc.aliapp.org
 127.0.0.1 umeedupvanfoundation.com
 127.0.0.1 umeng.co
 127.0.0.1 umeng.co
