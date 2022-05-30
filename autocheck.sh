@@ -28,6 +28,7 @@ https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/iPv4Hosts.txt
 https://hblock.molinero.dev/hosts_adblock.txt
 https://files.extstars.com/hosts/hosts
 https://abp.oisd.nl/
+https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/ad-domains.txt
 EOF
 
 # 保留必要host
