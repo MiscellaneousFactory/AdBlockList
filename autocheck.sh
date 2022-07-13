@@ -29,6 +29,7 @@ https://hblock.molinero.dev/hosts_adblock.txt
 https://files.extstars.com/hosts/hosts
 https://abp.oisd.nl/
 https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/ad-domains.txt
+https://raw.githubusercontent.com/fordes123/adg-rule/main/rule/hosts.txt
 EOF
 
 # 保留必要host
