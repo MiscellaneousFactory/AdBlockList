@@ -30,10 +30,19 @@ https://files.extstars.com/hosts/hosts
 https://abp.oisd.nl/
 https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/ad-domains.txt
 https://raw.githubusercontent.com/fordes123/adg-rule/main/rule/hosts.txt
+https://adrules.top/dns.tx
+https://www.kbsml.com/wp-content/uploads/adblock/adguard/adg-kall-dns.tx
+https://raw.githubusercontent.com/Cats-Team/AdRules/main/mod/rules/dns-rules.txt
+https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-agh.tx
+https://raw.githubusercontent.com/jdlingyu/ad-wars/master/sha_ad_hosts
+https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-domains.txt
+https://adaway.org/hosts.txt
+https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt
+https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt
 EOF
 
 # 保留必要host
 sed -i '/^\(127\|0\|::\)/!d;s/0.0.0.0/127.0.0.1/g;/ip6-/d;/localhost/d;s/#.*//g;s/\s\{2,\}//g;/tencent\|c\.pc/d' $t
 
 # 更新hosts
-(echo -e "# `date '+%Y-%m-%d %T'`\n# 杂项工厂实验项目，请勿商用\n\n127.0.0.1 localhost\n::1 localhost\n" && sort -u $t) >$f&&rm $t&&echo "更新hosts成功"||echo "更新hosts失败..."
+(echo -e "# `date '+%Y-%m-%d %T'`\n# 杂项工厂实验项目，请勿商用\n\n127.0.0.1 localhost\n::1 localhost\n" && sort -u $t) >$f&&rm $t&&echo "更新hosts成功"||echo "更新hosts失败...
