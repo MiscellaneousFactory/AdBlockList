@@ -39,9 +39,9 @@ https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-a
 https://adaway.org/hosts.txt
 https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt
 https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt
-#https://cdn.jsdelivr.net/gh/neoFelhz/neohosts@gh-pages/full/hosts.txt
 EOF
 
+# https://cdn.jsdelivr.net/gh/neoFelhz/neohosts@gh-pages/full/hosts.txt
 # 保留必要host
 sed -i '/^\(127\|0\|::\)/!d;s/0.0.0.0/127.0.0.1/g;/ip6-/d;/localhost/d;s/#.*//g;s/\s\{2,\}//g;/tencent\|c\.pc/d' $t
 
