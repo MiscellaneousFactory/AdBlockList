@@ -42,6 +42,7 @@ https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt
 http://winhelp2002.mvps.org/hosts.txt
 https://raw.githubusercontent.com/zsakvo/AdGuard-Custom-Rule/master/rule/zhihu-strict.txt
 https://cdn.jsdelivr.net/gh/neoFelhz/neohosts@gh-pages/full/hosts.txt
+EOF
 #https://raw.githubusercontent.com/dallaslu/penzai-list/main/uBlacklist.txt
 #https://www.i-dont-care-about-cookies.eu/abp/
 #https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
@@ -49,9 +50,7 @@ https://cdn.jsdelivr.net/gh/neoFelhz/neohosts@gh-pages/full/hosts.txt
 #https://easylist-downloads.adblockplus.org/easylistchina.txt
 #https://easylist-downloads.adblockplus.org/easyprivacy.txt
 #https://easylist-downloads.adblockplus.org/easylist-cookie.txt
-#https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
-EOF
-
+# https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 # https://cdn.jsdelivr.net/gh/neoFelhz/neohosts@gh-pages/full/hosts.txt
 # 保留必要host
 sed -i '/^\(127\|0\|::\)/!d;s/0.0.0.0/127.0.0.1/g;/ip6-/d;/localhost/d;s/#.*//g;s/\s\{2,\}//g;/tencent\|c\.pc/d' $t
