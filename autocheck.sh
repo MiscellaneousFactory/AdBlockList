@@ -43,6 +43,7 @@ http://winhelp2002.mvps.org/hosts.txt
 https://raw.githubusercontent.com/zsakvo/AdGuard-Custom-Rule/master/rule/zhihu-strict.txt
 https://cdn.jsdelivr.net/gh/neoFelhz/neohosts@gh-pages/full/hosts.txt
 https://raw.githubusercontent.com/Cats-Team/AdRules/main/hosts.txt
+https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt
 EOF
 #https://raw.githubusercontent.com/dallaslu/penzai-list/main/uBlacklist.txt
 #https://www.i-dont-care-about-cookies.eu/abp/
