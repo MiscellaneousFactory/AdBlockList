@@ -40,12 +40,12 @@ https://adaway.org/hosts.txt
 https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt
 https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt
 http://winhelp2002.mvps.org/hosts.txt
-https://raw.githubusercontent.com/zsakvo/AdGuard-Custom-Rule/master/rule/zhihu-strict.txt
 https://cdn.jsdelivr.net/gh/neoFelhz/neohosts@gh-pages/full/hosts.txt
 https://raw.githubusercontent.com/Cats-Team/AdRules/main/hosts.txt
 https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt
 https://raw.githubusercontent.com/fordes123/ad-filters-subscriber/main/rule/dns.txt
 EOF
+#https://raw.githubusercontent.com/zsakvo/AdGuard-Custom-Rule/master/rule/zhihu-strict.txt
 #https://raw.githubusercontent.com/dallaslu/penzai-list/main/uBlacklist.txt
 #https://www.i-dont-care-about-cookies.eu/abp/
 #https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
