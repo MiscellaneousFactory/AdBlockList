@@ -25,7 +25,6 @@ https://raw.githubusercontent.com/Licolnlee/AdBlockList/master/AdBlockLiteTest-d
 https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/Hosts.txt
 https://hblock.molinero.dev/hosts_adblock.txt
 https://adrules.top/dns.txt
-https://www.kbsml.com/wp-content/uploads/adblock/adguard/adg-kall-dns.txt
 https://raw.githubusercontent.com/jdlingyu/ad-wars/master/sha_ad_hosts
 https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-domains.txt
 https://adaway.org/hosts.txt
@@ -36,6 +35,7 @@ https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns
 https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/DD-AD.txt
 https://raw.githubusercontent.com/8680/GOODBYEADS/master/dns.txt
 EOF
+#https://www.kbsml.com/wp-content/uploads/adblock/adguard/adg-kall-dns.txt
 #https://raw.githubusercontent.com/zsakvo/AdGuard-Custom-Rule/master/rule/zhihu-strict.txt
 #https://raw.githubusercontent.com/dallaslu/penzai-list/main/uBlacklist.txt
 #https://www.i-dont-care-about-cookies.eu/abp/
