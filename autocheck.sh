@@ -50,6 +50,13 @@ EOF
 # https://cdn.jsdelivr.net/gh/neoFelhz/neohosts@gh-pages/full/hosts.txt
 # 保留必要host
 # sed -i '/^\(127\|0\|::\)/!d;s/0.0.0.0/127.0.0.1/g;/ip6-/d;/localhost/d;s/#.*//g;s/\s\{2,\}//g;/tencent\|c\.pc/d' $t
+# 去除重复行
+sort -u $t -o $t
+
+# 去除以"!"开头的行
+sed -i '/^!/d' $t
+
+# 修改规则为"||domain^"
 sed -i 's/^\(127\|0\|::\)/||/g;s/0.0.0.0/||/g;/ip6-/d;/localhost/d;s/#.*//g;s/\s\{2,\}//g;/tencent\|c\.pc/d' $t
 
 # 更新hosts
