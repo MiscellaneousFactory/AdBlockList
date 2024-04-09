@@ -60,10 +60,12 @@ if [ -s duplicate_domains ]; then
     echo "重复的域名："
     cat duplicate_domains
     echo "正在从ad.txt中去除重复域名..."
+    cp $t $t.bak
     while read domain; do
         sed -i "/$domain/d" $t
     done < duplicate_domains
     echo "去除重复域名完成"
+    rm $t.bak
 else
     echo "没有重复的域名"
 fi
