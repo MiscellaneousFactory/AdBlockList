@@ -49,29 +49,29 @@ sed -i '/^!/d' $t
 # 修改规则为"||domain^"
 #sed -i 's/^\(127\|0\|::\)/||/g;s/0.0.0.0/||/g;/ip6-/d;/localhost/d;s/#.*//g;s/\s\{2,\}//g;/tencent\|c\.pc/d' $t
 
-# 提取域名
-awk -F"\\^" '{print $1}' $t > domains
+# # 提取域名
+# awk -F"\\^" '{print $1}' $t > domains
 
-# 检查重复域名
-sort domains | uniq -d > duplicate_domains
+# # 检查重复域名
+# sort domains | uniq -d > duplicate_domains
 
-# 去除重复域名
-if [ -s duplicate_domains ]; then
-    echo "重复的域名："
-    cat duplicate_domains
-    echo "正在从ad.txt中去除重复域名..."
-    cp $t $t.bak
-    while read domain; do
-        sed -i "/$domain/d" $t
-    done < duplicate_domains
-    echo "去除重复域名完成"
-    rm $t.bak
-else
-    echo "没有重复的域名"
-fi
+# # 去除重复域名
+# if [ -s duplicate_domains ]; then
+#     echo "重复的域名："
+#     cat duplicate_domains
+#     echo "正在从ad.txt中去除重复域名..."
+#     cp $t $t.bak
+#     while read domain; do
+#         sed -i "/$domain/d" $t
+#     done < duplicate_domains
+#     echo "去除重复域名完成"
+#     rm $t.bak
+# else
+#     echo "没有重复的域名"
+# fi
 
-# 清理临时文件
-rm domains duplicate_domains
+# # 清理临时文件
+# rm domains duplicate_domains
 
 # 更新hosts
 (echo -e "# `date '+%Y-%m-%d %T'`\n# 杂项工厂实验项目，请勿商用\n" && sort -u $t) >$f&&rm $t&&echo "更新hosts成功"||echo "更新hosts失败..."
