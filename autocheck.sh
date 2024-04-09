@@ -3,13 +3,13 @@
 t=./hosts.txt
 f=./hosts
 
-curl -s https://gitee.com/qiusunshine233/hikerView/raw/master/ad_v1.txt > $t
+# curl -s https://gitee.com/qiusunshine233/hikerView/raw/master/ad_v1.txt > $t
 
-sed -i 's/\&\&/\n/g' $t
+# sed -i 's/\&\&/\n/g' $t
 
-curl -s https://gitee.com/qiusunshine233/hikerView/raw/master/ad_v2.txt >> $t
+# curl -s https://gitee.com/qiusunshine233/hikerView/raw/master/ad_v2.txt >> $t
 
-sed -i '/\(\/\|@\|\*\|^\.\|\:\)/d;s/^/127.0.0.1 /g' $t && echo "海阔影视hosts导入成功"
+# sed -i '/\(\/\|@\|\*\|^\.\|\:\)/d;s/^/127.0.0.1 /g' $t && echo "海阔影视hosts导入成功"
 
 while read i;do curl -s "$i">>$t&&echo "下载成功"||echo "下载失败";done<<EOF
 https://raw.githubusercontent.com/E7KMbb/AD-hosts/master/system/etc/hosts
@@ -49,7 +49,8 @@ EOF
 # https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 # https://cdn.jsdelivr.net/gh/neoFelhz/neohosts@gh-pages/full/hosts.txt
 # 保留必要host
-sed -i '/^\(127\|0\|::\)/!d;s/0.0.0.0/127.0.0.1/g;/ip6-/d;/localhost/d;s/#.*//g;s/\s\{2,\}//g;/tencent\|c\.pc/d' $t
+# sed -i '/^\(127\|0\|::\)/!d;s/0.0.0.0/127.0.0.1/g;/ip6-/d;/localhost/d;s/#.*//g;s/\s\{2,\}//g;/tencent\|c\.pc/d' $t
+sed -i 's/^\(127\|0\|::\)/||/g;s/0.0.0.0/||/g;/ip6-/d;/localhost/d;s/#.*//g;s/\s\{2,\}//g;/tencent\|c\.pc/d' $t
 
 # 更新hosts
 (echo -e "# `date '+%Y-%m-%d %T'`\n# 杂项工厂实验项目，请勿商用\n\n127.0.0.1 localhost\n::1 localhost\n" && sort -u $t) >$f&&rm $t&&echo "更新hosts成功"||echo "更新hosts失败..."
