@@ -7,7 +7,7 @@ Update period: Hourly.
 # Hosts Link
 | Source | Link |
 |  ----  | ----  |
-| AdBlockHost | [link](https://raw.githubusercontent.com/MiscellaneousFactory/AdBlockList/master/hosts)
+| AdBlockHost | [link](https://raw.githubusercontent.com/MiscellaneousFactory/AdBlockList/master/ad.txt)
 
 ## Special Thanks
 | Source | Link |
