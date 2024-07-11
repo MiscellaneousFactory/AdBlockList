@@ -20,6 +20,11 @@ https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns
 https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/DD-AD.txt
 https://raw.githubusercontent.com/8680/GOODBYEADS/master/dns.txt
 https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
+https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Spotify-AdBlock.txt
+https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Formats/GoodbyeAds-YouTube-AdBlock-Filter.txt
+https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Formats/GoodbyeAds-AdBlock-Filter.txt
+https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Xiaomi-Extension.txt
+https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Samsung-AdBlock.txt
 EOF
 # 保留必要host
 #https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt
