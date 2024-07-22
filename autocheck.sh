@@ -17,11 +17,9 @@ t=./ad.txt
 while read i;do curl -s "$i">>$t&&echo "下载成功"||echo "下载失败";done<<EOF
 https://raw.githubusercontent.com/rentianyu/Ad-set-hosts/master/xiaobeita/hosts
 https://adrules.top/dns.txt
-https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt
 https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
 https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/DD-AD.txt
 https://raw.githubusercontent.com/8680/GOODBYEADS/master/dns.txt
-https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
 EOF
 # 保留必要host
 #https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt
