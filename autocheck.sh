@@ -74,7 +74,8 @@ sed -i '/^!/d;/^#/d' $t
 # rm domains duplicate_domains
 
 # 更新hosts
-(echo -e "# `date '+%Y-%m-%d %T'`\n# 杂项工厂实验项目，请勿商用\n" && sort -u $t) >$f&&rm $t&&echo "更新hosts成功"||echo "更新hosts失败..."
+(echo -e "# $(date '+%Y-%m-%d %T')\n# 杂项工厂实验项目，请勿商用\n" && sort -u t) > f && rm t && echo "更新hosts成功" || echo "更新hosts失败..."
+# (echo -e "# `date '+%Y-%m-%d %T'`\n# 杂项工厂实验项目，请勿商用\n" && sort -u $t) >$f&&rm $t&&echo "更新hosts成功"||echo "更新hosts失败..."
 
 # # 去除重复行
 # sort -u $t -o $t
