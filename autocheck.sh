@@ -9,22 +9,19 @@ t=./ad.txt
 # curl -s https://gitee.com/qiusunshine233/hikerView/raw/master/ad_v2.txt >> $t
 
 # sed -i '/\(\/\|@\|\*\|^\.\|\:\)/d;s/^/127.0.0.1 /g' $t && echo "海阔影视hosts导入成功"
+# https://raw.githubusercontent.com/Licolnlee/AdBlockList/master/AdBlockLiteTest-dnsmasq
+#https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/Hosts.txt
+
+
 
 while read i;do curl -s "$i">>$t&&echo "下载成功"||echo "下载失败";done<<EOF
 https://raw.githubusercontent.com/rentianyu/Ad-set-hosts/master/xiaobeita/hosts
-https://raw.githubusercontent.com/Licolnlee/AdBlockList/master/AdBlockLiteTest-dnsmasq
-https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/Hosts.txt
 https://adrules.top/dns.txt
 https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt
 https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
 https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/DD-AD.txt
 https://raw.githubusercontent.com/8680/GOODBYEADS/master/dns.txt
 https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
-https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Spotify-AdBlock.txt
-https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Formats/GoodbyeAds-YouTube-AdBlock-Filter.txt
-https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Formats/GoodbyeAds-AdBlock-Filter.txt
-https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Xiaomi-Extension.txt
-https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Samsung-AdBlock.txt
 EOF
 # 保留必要host
 #https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt
