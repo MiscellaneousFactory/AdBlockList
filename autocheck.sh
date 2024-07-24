@@ -11,6 +11,9 @@ while read -r i; do
         echo "下载失败"
     fi
 done << EOF
+https://github.com/Potterli20/file/releases/download/github-hosts/Accelerate-Hosts.txt
+https://github.com/Potterli20/file/releases/download/github-hosts/gfw-hosts.txt
+https://github.com/Potterli20/file/releases/download/github-hosts/bilibili-hosts.txt
 https://raw.githubusercontent.com/fordes123/hosts_generator/main/hosts
 https://raw.hellogithub.com/hosts
 https://onedrive-hosts.learningman.top/
@@ -40,7 +43,7 @@ sed -i '/^!/d;/^#/d' $newfile
 
 # 为AC生成hosts文件
 echo -e "# $(date '+%Y-%m-%d %T')\n# 杂项工厂实验项目，请勿商用\n" > ./rules/ac/hosts
-sed -n '/^0\.0\.0\.0/p' $newfile >> ./rules/ac/hosts
+cat $newfile >> ./rules/ac/hosts
 
 # 为AD生成hosts文件
 echo -e "# $(date '+%Y-%m-%d %T')\n# 杂项工厂实验项目，请勿商用\n" > ./rules/ad/hosts
