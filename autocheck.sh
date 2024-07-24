@@ -5,9 +5,12 @@ newfile=./temp.txt # A new file for reading and writing
 f=./f
 
 # 这里替换为你的Potterli20文件列表
-while read i; do
-    curl -s "$i" >> $t
-    echo "下载成功" || echo "下载失败"
+while read -r i; do
+    if curl -s "$i" >> $t; then
+        echo "下载成功"
+    else
+        echo "下载失败"
+    fi
 done << EOF
 https://raw.githubusercontent.com/rentianyu/Ad-set-hosts/master/xiaobeita/hosts
 https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
@@ -16,9 +19,12 @@ https://raw.githubusercontent.com/8680/GOODBYEADS/master/dns.txt
 EOF
 
 # 这里替换为你的其他文件列表
-while read i; do
-    curl -s "$i" >> $newfile
-    echo "下载成功" || echo "下载失败"
+while read -r i; do
+    if curl -s "$i" >> $newfile; then
+        echo "下载成功"
+    else
+        echo "下载失败"
+    fi
 done << EOF
 https://github.com/Potterli20/file/releases/download/github-hosts/Accelerate-Hosts.txt
 https://github.com/Potterli20/file/releases/download/github-hosts/gfw-hosts.txt
@@ -37,21 +43,18 @@ sed -i '/^!/d;/^#/d' $t
 sed -i '/^!/d;/^#/d' $newfile
 
 # 为AC生成hosts文件
-echo -e "# $(date '+%Y-%m-%d %T')
-# 杂项工厂实验项目，请勿商用
-" > ./rules/ac/hosts
-cat $t >> ./rules/ad/hosts
+echo -e "# $(date '+%Y-%m-%d %T')\n# 杂项工厂实验项目，请勿商用\n" > ./rules/ac/hosts
+sed -n '/^0\.0\.0\.0/p' $newfile >> ./rules/ac/hosts
 
 # 为AD生成hosts文件
-echo -e "# $(date '+%Y-%m-%d %T')
-# 杂项工厂实验项目，请勿商用
-" > ./rules/ad/hosts
-sed -n '/^0\.0\.0\.0/,$p' $newfile >> ./rules/ac/hosts
+echo -e "# $(date '+%Y-%m-%d %T')\n# 杂项工厂实验项目，请勿商用\n" > ./rules/ad/hosts
+cat $t >> ./rules/ad/hosts
 
 rm $newfile
 rm $t
 rm $f
 echo "更新hosts成功"
+
 # # # 下载去广告hosts合并并去重
 
 # # t=./ad.txt
