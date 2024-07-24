@@ -11,9 +11,6 @@ while read -r i; do
         echo "下载失败"
     fi
 done << EOF
-https://github.com/Potterli20/file/releases/download/github-hosts/Accelerate-Hosts.txt
-https://github.com/Potterli20/file/releases/download/github-hosts/gfw-hosts.txt
-https://github.com/Potterli20/file/releases/download/github-hosts/bilibili-hosts.txt
 https://raw.githubusercontent.com/fordes123/hosts_generator/main/hosts
 https://raw.hellogithub.com/hosts
 https://onedrive-hosts.learningman.top/
