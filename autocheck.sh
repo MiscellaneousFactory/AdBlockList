@@ -2,9 +2,24 @@
 
 t=./ad.txt
 newfile=./temp.txt # A new file for reading and writing
-f=./f
 
-# 这里替换为你的Potterli20文件列表
+# 下载Potterli20文件列表内容到newfile
+while read -r i; do
+    if curl -s "$i" >> $newfile; then
+        echo "下载成功"
+    else
+        echo "下载失败"
+    fi
+done << EOF
+https://github.com/Potterli20/file/releases/download/github-hosts/Accelerate-Hosts.txt
+https://github.com/Potterli20/file/releases/download/github-hosts/gfw-hosts.txt
+https://github.com/Potterli20/file/releases/download/github-hosts/bilibili-hosts.txt
+https://raw.githubusercontent.com/fordes123/hosts_generator/main/hosts
+https://raw.hellogithub.com/hosts
+https://onedrive-hosts.learningman.top/
+EOF
+
+# 下载其他文件列表内容到t
 while read -r i; do
     if curl -s "$i" >> $t; then
         echo "下载成功"
@@ -16,22 +31,6 @@ https://raw.githubusercontent.com/rentianyu/Ad-set-hosts/master/xiaobeita/hosts
 https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
 https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/DD-AD.txt
 https://raw.githubusercontent.com/8680/GOODBYEADS/master/dns.txt
-EOF
-
-# 这里替换为你的其他文件列表
-while read -r i; do
-    if curl -s "$i" >> $newfile; then
-        echo "下载成功"
-    else
-        echo "下载失败"
-    fi
-done << EOF
-https://github.com/Potterli20/file/releases/download/github-hosts/Accelerate-Hosts.txt
-https://github.com/Potterli20/file/releases/download/github-hosts/gfw-hosts.txt
-https://raw.githubusercontent.com/Potterli20/file/releases/download/github-hosts/bilibili-hosts.txt
-https://raw.githubusercontent.com/fordes123/hosts_generator/main/hosts
-https://raw.hellogithub.com/hosts
-https://onedrive-hosts.learningman.top/
 EOF
 
 # 去除重复行
@@ -52,7 +51,6 @@ cat $t >> ./rules/ad/hosts
 
 rm $newfile
 rm $t
-rm $f
 echo "更新hosts成功"
 
 # # # 下载去广告hosts合并并去重
