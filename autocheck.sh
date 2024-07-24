@@ -11,9 +11,9 @@ while read -r i; do
         echo "下载失败"
     fi
 done << EOF
-https://github.com/Potterli20/file/releases/download/github-hosts/Accelerate-Hosts.txt
-https://github.com/Potterli20/file/releases/download/github-hosts/gfw-hosts.txt
-https://github.com/Potterli20/file/releases/download/github-hosts/bilibili-hosts.txt
+# https://github.com/Potterli20/file/releases/download/github-hosts/Accelerate-Hosts.txt
+# https://github.com/Potterli20/file/releases/download/github-hosts/gfw-hosts.txt
+# https://github.com/Potterli20/file/releases/download/github-hosts/bilibili-hosts.txt
 https://raw.githubusercontent.com/fordes123/hosts_generator/main/hosts
 https://raw.hellogithub.com/hosts
 https://onedrive-hosts.learningman.top/
@@ -32,6 +32,12 @@ https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns
 https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/DD-AD.txt
 https://raw.githubusercontent.com/8680/GOODBYEADS/master/dns.txt
 EOF
+
+# 下载Potterli20文件列表内容到newfile
+curl -s https://github.com/Potterli20/file/releases/download/github-hosts/Accelerate-Hosts.txt | sed -i '/^!/d;/^#/d' >> $newfile
+curl -s https://github.com/Potterli20/file/releases/download/github-hosts/gfw-hosts.txt | sed -i '/^!/d;/^#/d' >> $newfile
+curl -s https://github.com/Potterli20/file/releases/download/github-hosts/bilibili-hosts.txt | sed -i '/^!/d;/^#/d' >> $newfile
+
 
 # 去除重复行
 sort -u $newfile -o $newfile
