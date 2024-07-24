@@ -11,9 +11,6 @@ while read -r i; do
         echo "下载失败"
     fi
 done << EOF
-# https://github.com/Potterli20/file/releases/download/github-hosts/Accelerate-Hosts.txt
-# https://github.com/Potterli20/file/releases/download/github-hosts/gfw-hosts.txt
-# https://github.com/Potterli20/file/releases/download/github-hosts/bilibili-hosts.txt
 https://raw.githubusercontent.com/fordes123/hosts_generator/main/hosts
 https://raw.hellogithub.com/hosts
 https://onedrive-hosts.learningman.top/
@@ -34,9 +31,9 @@ https://raw.githubusercontent.com/8680/GOODBYEADS/master/dns.txt
 EOF
 
 # 下载Potterli20文件列表内容到newfile
-curl -s https://github.com/Potterli20/file/releases/download/github-hosts/Accelerate-Hosts.txt | sed -i '/^!/d;/^#/d' >> $newfile
-curl -s https://github.com/Potterli20/file/releases/download/github-hosts/gfw-hosts.txt | sed -i '/^!/d;/^#/d' >> $newfile
-curl -s https://github.com/Potterli20/file/releases/download/github-hosts/bilibili-hosts.txt | sed -i '/^!/d;/^#/d' >> $newfile
+wget -qO- https://github.com/Potterli20/file/releases/download/github-hosts/Accelerate-Hosts.txt | tee -a $newfile
+wget -qO- https://github.com/Potterli20/file/releases/download/github-hosts/gfw-hosts.txt | tee -a $newfile
+wget -qO- https://github.com/Potterli20/file/releases/download/github-hosts/bilibili-hosts.txt | tee -a $newfile
 
 
 # 去除重复行
@@ -58,6 +55,7 @@ cat $t >> ./rules/ad/hosts
 rm $newfile
 rm $t
 echo "更新hosts成功"
+
 
 # # # 下载去广告hosts合并并去重
 
